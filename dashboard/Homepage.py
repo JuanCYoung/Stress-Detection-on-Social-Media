@@ -5,7 +5,7 @@ import os
 
 def add_logo():
     # Encode the local image file as a base64 string
-    with open('../dashboard/logo/logo_filkom_resized.png', 'rb') as f:
+    with open('dashboard/logo/logo_filkom_resized.png', 'rb') as f:
         image_data = f.read()
         encoded_image = base64.b64encode(image_data).decode('utf-8')
 
