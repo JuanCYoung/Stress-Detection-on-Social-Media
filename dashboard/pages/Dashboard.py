@@ -153,12 +153,12 @@ if select_event == 'Reddit':
     with row3_2:
         st.metric("Non Stressed Count", value=label_count.get(0, 0))
     with row4_1:
-        st.subheader("Data Distribution of Stress People Based on Word Length")
+        st.subheader("Word Distribution of Stress People Based on Word Length")
         mean_stress = mean_teks(reddit_df,1)
         st.metric("The Average Word Length", value=mean_stress)
         histogram_plot(reddit_df, 1)
     with row4_2:
-        st.subheader("Data Distribution of Non-Stress People Based on Word Length")
+        st.subheader("Word Distribution of Non-Stress People Based on Word Length")
         mean_not_stess = mean_teks(reddit_df, 0)
         st.metric("The Average Word Length", value=mean_not_stess)
         histogram_plot(reddit_df, 0)
@@ -182,12 +182,12 @@ else:
     with row3_2:
         st.metric("Non Stressed Count", value=label_count.get(0, 0))
     with row4_1:
-        st.subheader("Data Distribution of Stress People Based on Word Length")
+        st.subheader("Word Distribution of Stress People Based on Word Length")
         mean_stress = mean_teks(twitter_df, 1)
         st.metric("The Average Word Length", value=mean_stress)
         histogram_plot(twitter_df, 1)
     with row4_2:
-        st.subheader("Data Distribution of Non-Stress People Based on Word Length")
+        st.subheader("Word Distribution of Non-Stress People Based on Word Length")
         mean_not_stess = mean_teks(twitter_df, 0)
         st.metric("The Average Word Length", value=mean_not_stess)
         histogram_plot(twitter_df, 0)
