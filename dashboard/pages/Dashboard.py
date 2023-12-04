@@ -97,8 +97,8 @@ def word_count(df, n):
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
 ## Import The Dataframe
-twitter_df = pd.read_csv("../dashboard/Data_csv/twitter_new.csv")
-reddit_df = pd.read_csv("../dashboard/Data_csv/reddit_new.csv")
+twitter_df = pd.read_csv("dashboard/Data_csv/twitter_new.csv")
+reddit_df = pd.read_csv("dashboard/Data_csv/reddit_new.csv")
 twitter_df = change_columns(twitter_df)
 reddit_df = change_columns(reddit_df)
 stopWords = STOPWORDS
