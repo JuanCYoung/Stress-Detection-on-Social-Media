@@ -49,10 +49,11 @@ st.write(
 
 st.subheader("How to Get Started :question:")
 st.write(
-    " - **Go To Stress Analyzer:** \n"
-    " - **:** \n"
-
+    "- **Go to Stress Analyzer**: Uncover insights into your stress levels.\n"
+    "- **Share Your Concerns**: Let us know what's on your mind.\n"
+    "- **AI Assessment**: Our advanced AI will analyze and determine your stress status."
 )
+
 
 # Why Stress Sentiment Analyzer section
 st.subheader("Why Stress Sentiment Analyzer?")
