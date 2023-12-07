@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon=":sparkles:",
 )
 def add_logo():
-    with open('../dashboard/logo/logo_filkom_resized.png', 'rb') as f:
+    with open('dashboard/logo/logo_filkom_resized.png', 'rb') as f:
         image_data = f.read()
         encoded_image = base64.b64encode(image_data).decode('utf-8')
     st.markdown(
