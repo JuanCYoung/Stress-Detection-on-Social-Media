@@ -17,7 +17,7 @@ This repository contains a data science project and also dashboard of Stress Cla
 
 ## Note
 
-This repository consists of two branches. The main branch is where the Streamlit cloud code is hosted (No Stress Analyzer). If you wish to utilize all the features, I recommend cloning and running the code locally from the "Local" branch. However, please note that the "Local" branch's "dashboard/Model" contains only one model due to the limitations of GIT LFS. To access the remaining models, I recommend downloading them from the following link: https://drive.google.com/drive/u/0/folders/10n5BVkS-vinlMZxGgfUEYSHI380HqVQ6
+This repository consists of two branches. The main branch is where the Streamlit cloud code is hosted (No Stress Analyzer). If you wish to utilize all the features, I recommend cloning and running the code locally from the "Local" branch. However, please note that the "Local" branch's "dashboard/Model" contains only one model due to the limitations of GIT LFS. To access the remaining models, I recommend downloading them from the following link: https://drive.google.com/drive/u/0/folders/10n5BVkS-vinlMZxGgfUEYSHI380HqVQ6 and place them in "dashboard/Model"
 
 ## How To Install
 
