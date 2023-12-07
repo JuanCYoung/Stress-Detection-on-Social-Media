@@ -9,7 +9,7 @@ import numpy as np
 custom_objects = {'TFBertModel': TFBertModel}
 
 def analyze_bert(input_text):
-    loaded_model = tf.keras.models.load_model('../dashboard/Model/model_bert.h5',
+    loaded_model = tf.keras.models.load_model('dashboard/Model/model_bert.h5',
                                             custom_objects=custom_objects)
     tokenizer_bert = BertTokenizerFast.from_pretrained('bert-base-uncased')
     text_input = tokenizer_bert.encode_plus(
