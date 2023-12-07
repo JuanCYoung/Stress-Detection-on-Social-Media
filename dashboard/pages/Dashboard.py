@@ -47,7 +47,7 @@ def histogram_plot(df,n):
     teks_stress_reddit = df[df['label'] == n]['text']
     teks_stress_reddit = pd.DataFrame({'text': teks_stress_reddit})
     teks_stress_reddit['text_length'] = teks_stress_reddit['text'].apply(lambda x: len(x.split()))
-    plt_hist = plt.figure(figsize=(8,8))
+    plt_hist = plt.figure(figsize=(8,5))
     sns.histplot(teks_stress_reddit['text_length'], bins=50, color='blue', kde=True, alpha=0.8)
     plt.xlabel('Number of Words')
     plt.ylabel('Frequency')
