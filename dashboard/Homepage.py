@@ -1,6 +1,10 @@
-import seaborn as sns
 import streamlit as st
 import base64
+
+st.set_page_config(
+    page_title="Stress Detection on Social Media",
+    page_icon=":sparkles:",
+)
 def add_logo():
     with open('../dashboard/logo/logo_filkom_resized.png', 'rb') as f:
         image_data = f.read()
@@ -26,17 +30,10 @@ def add_logo():
         unsafe_allow_html=True,
     )
 
-sns.set(style='dark')
-
-st.set_page_config(
-    page_title="Stress Detection on Social Media",
-    page_icon=":sparkles:",
-)
-
 add_logo()
 st.title("Welcome To Stress Sentiment Analyzer:sparkles:")
 st.header("Discover Your Stress Sentiment with Advanced AI")
-st.image("dashboard/image/istockphoto-1281210009-612x612.jpg")
+st.image("../dashboard/image/istockphoto-1281210009-612x612.jpg")
 st.write(
     "Life can be hectic, and stress is a natural part of the human experience. Welcome to the Stress Sentiment Analyzer, "
     "powered by cutting-edge BERT and ROBERTA algorithms."
