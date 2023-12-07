@@ -15,7 +15,7 @@ st.set_page_config(
 custom_objects_bert = {'TFBertModel': TFBertModel}
 tf.keras.utils.get_custom_objects()['TFRobertaModel'] = TFRobertaModel
 def analyze_bert(input_text):
-    loaded_model = tf.keras.models.load_model('dashboard/Model/model_bert.h5',
+    loaded_model = tf.keras.models.load_model('../dashboard/Model/model_bert.h5',
                                             custom_objects=custom_objects_bert)
     tokenizer_bert = BertTokenizerFast.from_pretrained('bert-base-uncased')
     text_input = tokenizer_bert.encode_plus(
