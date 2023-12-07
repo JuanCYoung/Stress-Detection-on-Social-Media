@@ -5,11 +5,8 @@ import seaborn as sns
 import streamlit as st
 from wordcloud import WordCloud, STOPWORDS
 from collections import Counter
-import warnings
 import plotly.express as px
-import os
 from Homepage import add_logo
-from streamlit_extras.add_vertical_space import add_vertical_space
 
 st.set_page_config(
     page_title="Dashboard Stress Detection on Social Media",
@@ -97,8 +94,8 @@ def word_count(df, n):
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
 ## Import The Dataframe
-twitter_df = pd.read_csv("dashboard/Data_csv/twitter_new.csv")
-reddit_df = pd.read_csv("dashboard/Data_csv/reddit_new.csv")
+twitter_df = pd.read_csv("../dashboard/Data_csv/twitter_new.csv")
+reddit_df = pd.read_csv("../dashboard/Data_csv/reddit_new.csv")
 twitter_df = change_columns(twitter_df)
 reddit_df = change_columns(reddit_df)
 stopWords = STOPWORDS

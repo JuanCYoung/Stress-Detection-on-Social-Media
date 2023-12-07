@@ -1,15 +1,10 @@
 import seaborn as sns
 import streamlit as st
 import base64
-import os
-
 def add_logo():
-    # Encode the local image file as a base64 string
-    with open('dashboard/logo/logo_filkom_resized.png', 'rb') as f:
+    with open('../dashboard/logo/logo_filkom_resized.png', 'rb') as f:
         image_data = f.read()
         encoded_image = base64.b64encode(image_data).decode('utf-8')
-
-    # Inject the base64 encoded image data into the CSS style
     st.markdown(
         f"""
         <style>
@@ -41,7 +36,7 @@ st.set_page_config(
 add_logo()
 st.title("Welcome To Stress Sentiment Analyzer:sparkles:")
 st.header("Discover Your Stress Sentiment with Advanced AI")
-st.image("dashboard/image/istockphoto-1281210009-612x612.jpg")
+st.image("../dashboard/image/istockphoto-1281210009-612x612.jpg")
 st.write(
     "Life can be hectic, and stress is a natural part of the human experience. Welcome to the Stress Sentiment Analyzer, "
     "powered by cutting-edge BERT and ROBERTA algorithms."
