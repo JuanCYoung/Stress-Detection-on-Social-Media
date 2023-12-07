@@ -73,7 +73,7 @@ def analyze_roberta(input_text):
     predicted_np = predicted.numpy()
     predicted_labels = np.argmax(predicted, axis=1)
     if predicted_labels[0] == 1:
-        return "You Are Stress, Get Some Rest :sos:"
+        return "You Are Stressed, Get Some Rest :sos:"
     else:
         return "You Are Good, Keep it Up :sparkles:"
 
