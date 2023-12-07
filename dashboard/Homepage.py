@@ -33,7 +33,7 @@ def add_logo():
 add_logo()
 st.title("Welcome To Stress Sentiment Analyzer:sparkles:")
 st.header("Discover Your Stress Sentiment with Advanced AI")
-st.image("../dashboard/image/istockphoto-1281210009-612x612.jpg")
+st.image("dashboard/image/istockphoto-1281210009-612x612.jpg")
 st.write(
     "Life can be hectic, and stress is a natural part of the human experience. Welcome to the Stress Sentiment Analyzer, "
     "powered by cutting-edge BERT and ROBERTA algorithms."
