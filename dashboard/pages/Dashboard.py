@@ -36,11 +36,8 @@ def plot_bar_chart(df):
     label_name = define_label(df)
     label_counts = define_label_count(df)
 
-    # Sort labels based on counts
-    sorted_labels = label_counts.index.tolist()
-
     fig_barchart = plt.figure(figsize=(8, 6))
-    plt.bar(sorted_labels, label_counts.values)
+    plt.bar(label_name, label_counts.values)
     plt.xlabel('Label')
     plt.ylabel('Sum')
     st.pyplot(fig_barchart, use_container_width=True)
