@@ -32,16 +32,18 @@ def define_label_count(df):
     label_count = df['label'].value_counts()
     return label_count
 
-## For Reddit
 def plot_bar_chart(df):
     label_name = define_label(df)
     label_counts = define_label_count(df)
+
+    # Sort labels based on counts
+    sorted_labels = label_counts.index.tolist()
+
     fig_barchart = plt.figure(figsize=(8, 6))
-    plt.bar(label_name, label_counts.values)
+    plt.bar(sorted_labels, label_counts.values)
     plt.xlabel('Label')
     plt.ylabel('Sum')
-    st.plotly_chart(fig_barchart,use_container_width=True)
-
+    st.pyplot(fig_barchart, use_container_width=True)
 ## Reddit Stress
 def histogram_plot(df,n):
     teks_stress_reddit = df[df['label'] == n]['text']
