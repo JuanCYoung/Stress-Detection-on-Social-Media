@@ -36,11 +36,16 @@ def define_label_count(df):
 def plot_bar_chart(df):
     label_name = define_label(df)
     label_counts = define_label_count(df)
-    fig_barchart = plt.figure(figsize=(8, 6))
-    plt.bar(label_name, label_counts.values)
-    plt.xlabel('Label')
-    plt.ylabel('Sum')
-    st.plotly_chart(fig_barchart,use_container_width=True)
+
+    # Create a DataFrame for Plotly
+    data = {'Label': label_name, 'Count': label_counts.values}
+    df_plotly = pd.DataFrame(data)
+
+    # Create a Plotly bar chart
+    fig_barchart = px.bar(df_plotly, x='Label', y='Count', labels={'Label': 'Label', 'Count': 'Sum'})
+
+    # Show the Plotly chart in Streamlit
+    st.plotly_chart(fig_barchart, use_container_width=True)
 
 ## Reddit Stress
 def histogram_plot(df,n):
